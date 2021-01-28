@@ -1,4 +1,3 @@
-
 type Leave = any;
 type Hash = any;
 
@@ -7,5 +6,5 @@ const enum TErrors {
   BAD_MERKLETREE_PARAMETERS = 'Bad MerkleTree parameters'
 }
 
-export type {Leave, Hash}
-export {TErrors}
+export { Leave, Hash };
+export { TErrors };
