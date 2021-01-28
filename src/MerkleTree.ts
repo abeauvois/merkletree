@@ -42,16 +42,12 @@ export class MerkleTree {
       let raw = [];
 
       for (let index = 0; index < this.root[0].length; index += 2) {
-        if (index < this.root[0].length - 1 && index % 2 == 0) {
+        if (index < this.root[0].length - 1 && index % 2 === 0) {
           raw.push(SHA256(this.root[0][index] + this.root[0][index + 1]));
         } else raw.push(this.root[0][index]);
       }
 
       this.root.unshift(raw);
     }
-  }
-
-  static fromLeaves(leaves: Leave[]): MerkleTree {
-    return new MerkleTree(leaves);
   }
 }

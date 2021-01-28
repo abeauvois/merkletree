@@ -37,9 +37,4 @@ describe('MerkleTree', () => {
       SHA256(SHA256('L1').toString() + SHA256('L2').toString())
     );
   });
-
-  it.skip('R2: should have the same hash as its child’s, if a node has only one child, ', () => {
-    const mt = new MerkleTree([]);
-    expect(mt).toEqual(2);
-  });
 });
