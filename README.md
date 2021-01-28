@@ -1,6 +1,6 @@
 ## Get started
 
-```bash
+```typescript
 import { MerkleTree } from '../src';
 
 const mt = new MerkleTree(['L1', 'L2']);
