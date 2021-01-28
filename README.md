@@ -1,4 +1,16 @@
+## Get started
 
+```bash
+import { MerkleTree } from '../src';
+
+const mt = new MerkleTree(['L1', 'L2']);
+
+// results:
+
+//    expect(mt.root[1][0]).toEqual(SHA256('L1'));
+//    expect(mt.root[1][1]).toEqual(SHA256('L2'));
+//    expect(mt.root[0][0]).toEqual(SHA256(SHA256('L1').toString() + SHA256('L2').toString()));
+```
 
 ## How to Use
 
